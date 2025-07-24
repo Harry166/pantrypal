@@ -5,9 +5,9 @@
   "private": true,
   "homepage": "https://Harry166.github.io/PantryPal",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview",
     "start": "serve -s dist -l $PORT",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
@@ -15,7 +15,8 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.52.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
