@@ -1,0 +1,106 @@
+.shopping-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 0;
+}
+
+.shopping-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--surface);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.shopping-item:hover {
+  background-color: var(--border);
+}
+
+.shopping-item.checked {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.item-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.item-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-name {
+  font-size: 1rem;
+  color: var(--text-primary);
+  display: block;
+}
+
+.item-quantity {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.item-notes {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checked-label {
+  font-size: 0.875rem;
+  color: var(--success);
+  font-weight: 500;
+}
+
+.shopping-tips {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--surface);
+  border-radius: 0.5rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-secondary);
+}
+
+.empty-state p:first-child {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .shopping-item {
+    padding: 0.75rem;
+  }
+  
+  .item-checkbox {
+    width: 18px;
+    height: 18px;
+  }
+}
