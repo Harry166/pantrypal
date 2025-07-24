@@ -10,6 +10,6 @@ export default defineConfig({
     // This ensures that environment variables are properly replaced during build
     'process.env': {}
   },
-  // Set the base URL for GitHub Pages
-  base: '/PantryPal/'
+  // Base URL - use default for Render
+  base: '/'
 })
