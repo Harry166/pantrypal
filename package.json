@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A simple pantry management app to track your ingredients",
   "private": true,
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/PantryPal",
+  "homepage": "https://Harry166.github.io/PantryPal",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
