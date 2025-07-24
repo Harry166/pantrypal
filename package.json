@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "A simple pantry management app to track your ingredients",
   "private": true,
+  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/PantryPal",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "vite preview --port $PORT --host 0.0.0.0"
+    "start": "serve -s dist -l $PORT",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.52.1",
@@ -18,6 +21,7 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "@vitejs/plugin-react": "^4.2.0",
+    "gh-pages": "^6.3.0",
     "vite": "^5.0.0"
   }
 }
