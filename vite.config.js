@@ -11,6 +11,5 @@ export default defineConfig({
     'process.env': {}
   },
   // Set the base URL for GitHub Pages
-  // Replace 'PantryPal' with your repository name
-  base: process.env.NODE_ENV === 'production' ? '/PantryPal/' : '/'
+  base: '/PantryPal/'
 })
