@@ -2,8 +2,11 @@ services:
   - type: web
     name: pantrypal
     env: static
-    buildCommand: npm install && npx vite build
+    buildCommand: npm install && node node_modules/vite/bin/vite.js build
     staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 20.15.1
     headers:
       - path: /*
         name: X-Frame-Options
