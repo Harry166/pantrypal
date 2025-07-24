@@ -6,7 +6,7 @@
   "homepage": "https://Harry166.github.io/PantryPal",
   "scripts": {
     "dev": "npx vite",
-    "build": "npx vite build",
+    "build": "node node_modules/vite/bin/vite.js build",
     "preview": "npx vite preview",
     "start": "serve -s dist -l $PORT",
     "predeploy": "npm run build",
